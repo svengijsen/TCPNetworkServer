@@ -55,16 +55,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="TCPNetworkServer.cpp">
+    <ClCompile Include="tcpnetworkserver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TCPNetworkServer_dialog.cpp">
+    <ClCompile Include="tcpnetworkserver_dialog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TCPNetworkServerplugin.cpp">
+    <ClCompile Include="tcpnetworkserverplugin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StdAfx.cpp">
+    <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\Build_MSVC\Qt\Win32\Debug\Moc\moc_TCPNetworkServer_dialog.cpp">
@@ -123,7 +123,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="StdAfx.h">
+    <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
@@ -135,7 +135,7 @@
     <ClInclude Include="..\..\BrainStim\plugininterface.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CustomScriptObjects.h">
+    <ClInclude Include="customscriptobjects.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\Build_MSVC\Qt\$(PlatformName)\$(ConfigurationName)\GeneratedFiles\ui_TCPNetworkServer_dialog.h">
@@ -143,24 +143,24 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="TCPNetworkServer.h">
+    <CustomBuild Include="tcpnetworkserver.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="TCPNetworkServer_dialog.h">
+    <CustomBuild Include="tcpnetworkserver_dialog.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="TCPNetworkServerplugin.h">
+    <CustomBuild Include="tcpnetworkserverplugin.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="TCPNetworkServer_dialog.ui">
+    <CustomBuild Include="tcpnetworkserver_dialog.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="TCPNetworkServerplugin.rc" />
+    <ResourceCompile Include="tcpnetworkserverplugin.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="licenseHeader.licenseheader" />
-    <None Include="TCPNetworkServer.json" />
+    <None Include="licenseheader.licenseheader" />
+    <None Include="tcpnetworkserver.json" />
   </ItemGroup>
 </Project>

@@ -17,7 +17,7 @@
 //
 
 
-#include "TCPNetworkServer_dialog.h"
+#include "tcpnetworkserver_dialog.h"
 
 TCPNetworkServer_Dialog::TCPNetworkServer_Dialog(QWidget *parent)	: QDialog(parent)
 {

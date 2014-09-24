@@ -26,8 +26,8 @@
 #include <Qlibrary>
 
 #include "plugininterface.h"
-#include "TCPNetworkServer_dialog.h"
-#include "TCPNetworkServer.h"
+#include "tcpnetworkserver_dialog.h"
+#include "tcpnetworkserver.h"
 #include "defines.h"
 
 QT_BEGIN_NAMESPACE
@@ -36,7 +36,7 @@ QT_END_NAMESPACE
 class TCPNetworkServerPlugin : public QObject, ExtensionInterface
 {
     Q_OBJECT
-	Q_PLUGIN_METADATA(IID "BrainStim.Plugins.Extensions" "TCPNetworkServer.json")
+	Q_PLUGIN_METADATA(IID "BrainStim.Plugins.Extensions" "tcpnetworkserver.json")
     Q_INTERFACES(ExtensionInterface)
 
 public:

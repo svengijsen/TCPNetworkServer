@@ -17,8 +17,8 @@
 //
 
 
-#include "TCPNetworkServerplugin.h"
-#include "TCPNetworkServer.h"
+#include "tcpnetworkserverplugin.h"
+#include "tcpnetworkserver.h"
 #include "defines.h"
 
 Q_DECLARE_METATYPE(TCPNetworkServer*)
