@@ -1,5 +1,5 @@
 //TCPNetworkServer
-//Copyright (C) 2014  Sven Gijsen
+//Copyright (C) 2015  Sven Gijsen
 //
 //This file is part of BrainStim.
 //BrainStim is free software: you can redistribute it and/or modify
@@ -29,6 +29,7 @@ TCPNetworkServerPlugin::TCPNetworkServerPlugin(QObject *parent)
 	TCPNetworkServerObject = new TCPNetworkServer(parent);
 	TCPNetworkServerDiagObject = new TCPNetworkServer_Dialog();	
 	strPluginInformation = QString(PLUGIN_INTERNAL_NAME) + " Plugin" + "(v" + PLUGIN_FILE_VERSION_STRING + ")" + " by " + PLUGIN_AUTHOR_NAME;
+	strPluginInternalName = PLUGIN_INTERNAL_NAME;
 }
 
 TCPNetworkServerPlugin::~TCPNetworkServerPlugin()
