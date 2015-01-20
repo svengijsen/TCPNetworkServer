@@ -23,7 +23,7 @@ TCPNetworkServer_Dialog::TCPNetworkServer_Dialog(QWidget *parent)	: QDialog(pare
 {
 	//Gets constructed only once during the load of the plugin
 	ui.setupUi(this);
-	connect(ui.btnExampleButton, SIGNAL(clicked()), this, SLOT(exampleButton_Pressed()));
+	//connect(ui.btnExampleButton, SIGNAL(clicked()), this, SLOT(exampleButton_Pressed()));
 }
 
 TCPNetworkServer_Dialog::~TCPNetworkServer_Dialog()
