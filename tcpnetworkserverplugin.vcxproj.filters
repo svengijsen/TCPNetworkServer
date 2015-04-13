@@ -121,6 +121,9 @@
     <ClCompile Include="..\Build_MSVC\Qt\x64\Template\Moc\moc_TCPNetworkServer.cpp">
       <Filter>Generated Files\Template_x64</Filter>
     </ClCompile>
+    <ClCompile Include="..\Build_MSVC\Qt\$(PlatformName)\$(ConfigurationName)\GeneratedFiles\qrc_tcpnetworkserver.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -155,6 +158,9 @@
     <CustomBuild Include="tcpnetworkserver_dialog.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="tcpnetworkserver.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="tcpnetworkserverplugin.rc" />
@@ -162,5 +168,17 @@
   <ItemGroup>
     <None Include="licenseheader.licenseheader" />
     <None Include="tcpnetworkserver.json" />
+    <None Include="resources\tcpnetworkserverplugin_Win32_Debug.ini">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\tcpnetworkserverplugin_Win32_Release.ini">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\tcpnetworkserverplugin_x64_Debug.ini">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\tcpnetworkserverplugin_x64_Release.ini">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
