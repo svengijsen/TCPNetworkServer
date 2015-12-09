@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<QHelpCollectionProject version="1.0">
+<!--doc-version-qhelp-begin-->
+<!-- Please do not edit the below line(s) manually, see DocumentVersioning.qs (1511915546),BrainStim version 1.0.0.1, Plugin version 1.0.0.1-->
+  <assistant>
+		<title>TCPNetworkServer plugin v1.0.0.1</title>
+    <applicationIcon>TCPNetworkServer/images/logo.jpg</applicationIcon>
+    <cacheDirectory>svengijsen/BrainStim/Plugins/TCPNetworkServer</cacheDirectory>
+    <startPage>qthelp://com.svengijsen.brainstim/doc/plugins/TCPNetworkServer/index.html</startPage>
+    <aboutMenuText>
+        <text>About TCPNetworkServer</text>
+    </aboutMenuText>
+    <aboutDialog>
+        <file>TCPNetworkServer/additional/about.txt</file>
+        <icon>TCPNetworkServer/images/logo.jpg</icon>
+    </aboutDialog>
+    <enableDocumentationManager>false</enableDocumentationManager>
+    <enableAddressBar>false</enableAddressBar>
+    <enableFilterFunctionality>false</enableFilterFunctionality>
+  </assistant>
+  <docFiles>
+  	<generate>
+    	<file>
+      	<input>TCPNetworkServer.qhp</input>
+        <output>TCPNetworkServer.qch</output>
+      </file>
+    </generate>
+    <register>
+    	<file>TCPNetworkServer.qch</file>
+    </register>
+  </docFiles>
+	</QHelpCollectionProject>
+<!--doc-version-qhelp-end-->
