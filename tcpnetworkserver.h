@@ -75,7 +75,7 @@ public slots:
 	/*!  This function Starts a TCP/IP network server listening on a defined Address and Port.
 	 * @param sAddress the IP address it should use to start the server, if it is "" then it'll automatically try to use the local hosts IPv4 Address.
 	 * @param port the port number the server should try to use (listening for new incoming connections).
-	 * @return a String value if the server could be successfully started then this function returns the <IP-address>:<Port> (e.g. 187.110.136.170:241) it is listening on for new connections.
+	 * @return a String value if the server could be successfully started then this function returns the \<IP-address\>:\<Port\> (e.g. 187.110.136.170:241) it is listening on for new connections.
 	 * If the server could not be started it returns the Error message.
 	 */
 	QString startServer(const QString &sAddress = "", int port = 0);
