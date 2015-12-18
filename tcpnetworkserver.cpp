@@ -20,7 +20,7 @@
 #include "tcpnetworkserver.h"
 #include <QNetworkInterface>
 
-QScriptValue TCPNetworkServer::ctor__extensionname(QScriptContext* context, QScriptEngine* engine)
+QScriptValue TCPNetworkServer::ctor_TCPNetworkServer(QScriptContext* context, QScriptEngine* engine)
 {
 	//this function gets called first whenever a new object is constructed trough the script
 
@@ -121,7 +121,7 @@ void TCPNetworkServer::newIncomingConnectionFromClient()
 {
 	QByteArray block;
 	QDataStream out(&block, QIODevice::WriteOnly);
-	out.setVersion(QDataStream::Qt_5_0);
+	out.setVersion(QDataStream::Qt_5_2);
 	out << (quint16)0;
 	out << QString("newIncomingConnectionFromClient() reaction data packet");//fortunes.at(qrand() % fortunes.size());
 	out.device()->seek(0);
@@ -165,7 +165,7 @@ int TCPNetworkServer::sendServerData(QString sData)
 {
 	QByteArray block;
 	QDataStream out(&block, QIODevice::WriteOnly);
-	out.setVersion(QDataStream::Qt_5_0);
+	out.setVersion(QDataStream::Qt_5_2);
 	out << (quint16)0;
 	out << sData;
 	out.device()->seek(0);
@@ -179,7 +179,7 @@ int TCPNetworkServer::sendClientData(QString sData)
 {
 	QByteArray block;
 	QDataStream out(&block, QIODevice::WriteOnly);
-	out.setVersion(QDataStream::Qt_5_0);
+	out.setVersion(QDataStream::Qt_5_2);
 	out << (quint16)0;
 	out << sData;
 	out.device()->seek(0);
@@ -231,7 +231,7 @@ void TCPNetworkServer::serverErrorNetworkData(QAbstractSocket::SocketError socke
 void TCPNetworkServer::dataFromClientAvailable()
 {
 	QDataStream in(serverClientConnectionSockets.last());
-	in.setVersion(QDataStream::Qt_5_0);
+	in.setVersion(QDataStream::Qt_5_2);
 	if (blockSize == 0) 
 	{
 		if (serverClientConnectionSockets.last()->bytesAvailable() < (int)sizeof(quint16))
@@ -252,7 +252,7 @@ void TCPNetworkServer::dataFromClientAvailable()
 void TCPNetworkServer::dataFromServerAvailable()
 {
 	QDataStream in(clientConnectionSocket);
-	in.setVersion(QDataStream::Qt_5_0);
+	in.setVersion(QDataStream::Qt_5_2);
 	if (blockSize == 0) 
 	{
 		if (clientConnectionSocket->bytesAvailable() < (int)sizeof(quint16))

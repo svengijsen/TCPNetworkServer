@@ -16,11 +16,9 @@
 //along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
+#ifndef TCPNETWORKSERVER_H
+#define TCPNETWORKSERVER_H
 
-//This file defines the script binding interface, all below function are scriptable except for the destructor
-
-#ifndef TCPNetworkServer_H
-#define TCPNetworkServer_H
 #include <QObject>
 #include <QString>
 #include <QtScript>
@@ -60,7 +58,7 @@ signals:
 	void ServerDataAvailable(QString sData);
 
 public:
-	static QScriptValue ctor__extensionname(QScriptContext* context, QScriptEngine* engine);
+	static QScriptValue ctor_TCPNetworkServer(QScriptContext* context, QScriptEngine* engine);
 	TCPNetworkServer(QObject *parent = 0);
 	~TCPNetworkServer();
 	TCPNetworkServer(const TCPNetworkServer& other ){Q_UNUSED(other);}//TODO fill in copy constructor, should be used for the Q_DECLARE_METATYPE macro
@@ -121,4 +119,4 @@ private:
 	quint16 blockSize;
 };
 
-#endif // TCPNetworkServer_H
+#endif // TCPNETWORKSERVER_H

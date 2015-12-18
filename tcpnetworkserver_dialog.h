@@ -16,11 +16,8 @@
 //along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-
-//This file implements the UI functionality
-
-#ifndef TCPNetworkServer_DIALOG_H
-#define TCPNetworkServer_DIALOG_H
+#ifndef TCPNETWORKSERVER_DIALOG_H
+#define TCPNETWORKSERVER_DIALOG_H
 
 #include <QDialog>
 #include "ui_TCPNetworkServer_dialog.h"
@@ -46,4 +43,4 @@ private slots:
 	void on_okButton_clicked();
 };
 
-#endif // TCPNetworkServer_DIALOG_H
+#endif // TCPNETWORKSERVER_DIALOG_H

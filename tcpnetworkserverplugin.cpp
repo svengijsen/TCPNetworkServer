@@ -42,7 +42,7 @@ int TCPNetworkServerPlugin::ConfigureScriptEngine(QScriptEngine &engine)
 {
 	QScriptValue TCPNetworkServerProto = engine.newQObject(TCPNetworkServerObject);
 	engine.setDefaultPrototype(qMetaTypeId<TCPNetworkServer*>(), TCPNetworkServerProto);
-	QScriptValue TCPNetworkServerCtor = engine.newFunction(TCPNetworkServer::ctor__extensionname, TCPNetworkServerProto);
+	QScriptValue TCPNetworkServerCtor = engine.newFunction(TCPNetworkServer::ctor_TCPNetworkServer, TCPNetworkServerProto);
 	engine.globalObject().setProperty(PLUGIN_SCRIPTOBJECT_NAME, TCPNetworkServerCtor);
 	int nMetaType = qRegisterMetaType<TCPNetworkServer>(PLUGIN_SCRIPTOBJECT_CLASS);
 	return nMetaType;

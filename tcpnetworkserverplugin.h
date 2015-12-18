@@ -53,6 +53,7 @@ private:
 	TCPNetworkServer_Dialog *TCPNetworkServerDiagObject;
 
 public slots:
+	bool HasGUI() { return false; };
     bool ShowGUI();
 	bool IsCompatible() {return PluginInterface::IsCompatible();};// ExtensionInterface PluginInterface::IsCompatible();};
 	//QStringList GetAdditionalFileExtensions() {return (QStringList() << "TCPNetworkServer files (*.TCPNetworkServer);;");};
